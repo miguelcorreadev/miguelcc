@@ -1,0 +1,125 @@
+/* ==========================================
+  ================= IMPORTS ================= */
+@import url("./style.css");
+
+
+
+
+
+/* ==========================================
+  ============== CSS VARIABLES ============= */
+  :root {
+    --bkg: #eff9ea;
+    
+    --cur-arrow: url("../images/ico/arrow.png");
+    --cur-point: url("../images/ico/pointer.png");
+  
+    --color-primary: #232f49;
+    --color-accent: #ffd740;
+    --color-light: #ffffff;
+    --color-primary-overlay: #232f49b8;
+
+    --color-accent-overlay: #ffd64097;
+  
+    --font-raleway: 'Raleway', sans-serif;
+    --font-robofx: 'Roboto Flex', sans-serif;
+  }
+
+/* ==========================================
+  ============ CONTACT PAGE ================= */
+
+* {
+  transition: all ease-in-out 300ms;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+  color: var(--color-primary) !important;
+}
+
+/* ----- FORM CONTAINER ---- */
+.card-form-form {
+  background: var(--bkg);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 70vh;
+
+}
+
+
+
+ /* ----- LINKS CONTAINER ---- */
+.other-contact a img {
+  margin-top: 5%;
+}
+
+/* ----- LINKS ---- */
+.other-contact a img:hover,
+.other-contact a img:active,
+.other-contact a img::after {
+  border-radius: 15%;
+  transition: all ease-in-out 300ms;
+  background-color: white;
+  color: var(--color-primary);
+  box-shadow: 
+    inset 0 0 5px 0px rgba(0, 0, 0, 0.437),
+     0 0 15px 0px rgba(255, 252, 252, 0.641);
+  transform: rotate(5deg) !important;
+  cursor: var(--cur-point), auto !important;
+}
+
+ /* ----- SEND FORM BUTTON ---- */
+#enviar-form {
+  background-color: var(--color-accent) !important;
+}
+
+#enviar-form:hover,
+#enviar-form:active {
+  background-color: var(--color-primary) !important;
+  color: var(--color-accent) !important;
+}
+
+
+
+
+/* ==========================================
+  ============== INPUTS & LABELS ============= */
+  /* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+/* label color */
+.input-field label {
+  color: grey;
+  font-size: 11px;
+}
+
+.input-field {
+  font-size: 11px;
+}
+
+
+.prefix {
+  color: var(--bkg);
+}
+
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: var(--color-prim-overlay);
+}
+
+
+
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: var(--color-primary);
+}
+
+
+.link {
+  color: var(--color-primary) !important;
+}
+
